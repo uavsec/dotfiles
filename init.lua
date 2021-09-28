@@ -112,6 +112,8 @@ line.setup {
     theme = 'material-nvim',
     --component_separators = {'', ''},
     --section_separators = {'', ''},
+    component_separators = {'', ''},
+    section_separators = {'', ''},
     disabled_filetypes = {}
   },
   sections = {
