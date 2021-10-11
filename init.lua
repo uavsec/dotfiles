@@ -99,7 +99,7 @@ pairs.setup{}
 local indent = require 'indent_blankline'
 
 indent.setup{
-  space_char_blankline = " ",
+  space_char_blankline = ' ',
   show_current_context = true,
 }
 
@@ -110,8 +110,6 @@ line.setup {
   options = {
     icons_enabled = true,
     theme = 'material-nvim',
-    --component_separators = {'', ''},
-    --section_separators = {'', ''},
     component_separators = {'', ''},
     section_separators = {'', ''},
     disabled_filetypes = {}
@@ -151,7 +149,7 @@ opt.expandtab = true                -- Use spaces instead of tabs
 opt.hidden = true                   -- Enable background buffers
 opt.ignorecase = true               -- Ignore case
 opt.joinspaces = false              -- No double spaces with join
-opt.list = true                     -- Show some invisible characters
+opt.list = false                    -- Show some invisible characters
 opt.number = true                   -- Show line numbers
 opt.relativenumber = true           -- Relative line numbers
 opt.scrolloff = 4                   -- Lines of context
