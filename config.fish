@@ -3,4 +3,4 @@ if status is-interactive
 end
 
 # Start docker in background and disowned (WSL lack of systemctl hack)
-alias kit="sudo dockerd &!"
+alias kit="sudo dockerd &"
