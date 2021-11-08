@@ -17,7 +17,7 @@ paq {'savq/paq-nvim', opt = true}    -- paq-nvim manages itself
 
 -- Coding related
 paq {'neovim/nvim-lspconfig'}
-paq {'hrsh7th/nvim-compe'}
+paq {'hrsh7th/nvim-cmp'}
 paq {'nvim-treesitter/nvim-treesitter'}
 
 --- Syntax
@@ -56,14 +56,14 @@ map('n', '<space>r', '<cmd>lua vim.lsp.buf.references()<CR>')
 map('n', '<space>s', '<cmd>lua vim.lsp.buf.document_symbol()<CR>')
 
 -------------------- LSP COMPE -----------------------------
-local cmp = require 'compe'
+local cmp = require 'cmp'
 
 cmp.setup{
   enabled = true,
   autocomplete = true;
   debug = false;
   min_length = 1;
-  preselect = "always",
+  preselect = "enable",
   throttle_time = 80,
   source_timeout = 200,
   resolve_timeout = 800,
