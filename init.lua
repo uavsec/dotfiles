@@ -25,7 +25,7 @@ paq {'windwp/nvim-autopairs'}
 
 --- Visual aid
 paq {'lewis6991/gitsigns.nvim'}
-paq {'lukas-reineke/indent-blankline.nvim'}
+-- paq {'lukas-reineke/indent-blankline.nvim'}
 
 -- Search related
 paq {'nvim-telescope/telescope.nvim'}
@@ -96,12 +96,12 @@ local pairs = require 'nvim-autopairs'
 pairs.setup{}
 
 -------------------- INDENT-BLANKLINE ----------------------
-local indent = require 'indent_blankline'
+--local indent = require 'indent_blankline'
 
-indent.setup{
-  space_char_blankline = ' ',
-  show_current_context = true,
-}
+--indent.setup{
+--  space_char_blankline = ' ',
+--  show_current_context = true,
+--}
 
 -------------------- LUALINE -------------------------------
 local line = require 'lualine'
